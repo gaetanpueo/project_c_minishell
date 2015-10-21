@@ -1,4 +1,4 @@
 # README #
 
 Project : minishell  
-Status  : In progress
+Status  : In progress, just push it to the vogsphere
