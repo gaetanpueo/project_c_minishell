@@ -1,4 +1,4 @@
 # README #
 
-Project : minishell
+Project : minishell  
 Status  : In progress
