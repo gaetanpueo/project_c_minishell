@@ -9,7 +9,19 @@ SDIR		=	src/
 ODIR		=	obj/
 HDIR		=	inc/
 
-SRCS		=	main.c
+SRCS		=	cd.c \
+				env_cpy.c \
+				equal_key.c \
+				exec_command.c \
+				free_exit.c \
+				get_path.c \
+				get_pwd.c \
+				main.c \
+				minishell.c \
+				parse_line.c \
+				print_env.c \
+				set_env.c \
+				unset_env.c
 _OBJS		=	$(SRCS:.c=.o)
 OBJS		=	$(patsubst %,$(ODIR)%,$(_OBJS))
 

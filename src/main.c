@@ -5,8 +5,8 @@ int			main(int argc, char **argv, const char **environ)
 	int		i;
 	t_lazy	*shell;
 
-	(void)ac;
-	(void)av;
+	(void)argc;
+	(void)argv;
 	i = 0;
 	if ((shell = (t_lazy *)malloc(sizeof(t_lazy))))
 	{
