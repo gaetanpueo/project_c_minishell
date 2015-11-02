@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-t_lazy		*parse_line(t_lazy *shell, int i)
+t_shell		*parse_line(t_shell *shell, int i)
 {
 	int		j;
 

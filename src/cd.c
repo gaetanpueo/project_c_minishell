@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-static t_lazy	*gil_scott_dilemma(t_lazy *shell)
+static t_shell	*gil_scott_dilemma(t_shell *shell)
 {
 	char	*home;
 	int		i;
@@ -21,7 +21,7 @@ static t_lazy	*gil_scott_dilemma(t_lazy *shell)
 	return (shell);
 }
 
-static t_lazy	*home_sweet_home(t_lazy *shell)
+static t_shell	*home_sweet_home(t_shell *shell)
 {
 	char	*home;
 	int		i;
@@ -38,7 +38,7 @@ static t_lazy	*home_sweet_home(t_lazy *shell)
 	return (shell);
 }
 
-static t_lazy	*absolute(t_lazy *shell)
+static t_shell	*absolute(t_shell *shell)
 {
 	if (access(shell->args[1], F_OK) == 0 && access(shell->args[1], R_OK) == 0)
 		chdir(shell->args[1]);
@@ -47,7 +47,7 @@ static t_lazy	*absolute(t_lazy *shell)
 	return (shell);
 }
 
-static t_lazy	*go_back(t_lazy *shell)
+static t_shell	*go_back(t_shell *shell)
 {
 	if (access(shell->expwd, F_OK) == 0 && access(shell->expwd, R_OK) == 0)
 		chdir(shell->expwd);
@@ -56,7 +56,7 @@ static t_lazy	*go_back(t_lazy *shell)
 	return (shell);
 }
 
-t_lazy			*cd(t_lazy *shell)
+t_shell			*cd(t_shell *shell)
 {
 	char	*path;
 

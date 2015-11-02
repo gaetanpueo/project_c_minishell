@@ -2,13 +2,11 @@
 
 int			main(int argc, char **argv, const char **environ)
 {
-	int		i;
-	t_lazy	*shell;
+	t_shell	*shell;
 
 	(void)argc;
 	(void)argv;
-	i = 0;
-	if ((shell = (t_lazy *)malloc(sizeof(t_lazy))))
+	if ((shell = (t_shell *)malloc(sizeof(t_shell))))
 	{
 		shell->pid = 1;
 		env_cpy(environ, &shell);

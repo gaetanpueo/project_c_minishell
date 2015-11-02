@@ -41,7 +41,7 @@ static char		*multiple_arguments(char *s1, char *s2)
 	return (ft_strjoin(ft_strjoin(s1, "="), s2));
 }
 
-t_lazy			*set_env(t_lazy *shell)
+t_shell			*set_env(t_shell *shell)
 {
 	int		i;
 	int		k;

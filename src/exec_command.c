@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-static t_lazy	*set_command(t_lazy *shell)
+static t_shell	*set_command(t_shell *shell)
 {
 	int		i;
 
@@ -29,7 +29,7 @@ static t_lazy	*set_command(t_lazy *shell)
 	return (shell);
 }
 
-static t_lazy	*exec_path(t_lazy *shell)
+static t_shell	*exec_path(t_shell *shell)
 {
 	shell->pid = fork();
 	if (shell->pid == -1)
@@ -44,7 +44,7 @@ static t_lazy	*exec_path(t_lazy *shell)
 	return (shell);
 }
 
-t_lazy			*exec_command(t_lazy *shell, int i)
+t_shell			*exec_command(t_shell *shell, int i)
 {
 	shell->line = ft_strdup(shell->cmd[i]);
 	if (ft_strcmp(ft_strlower(shell->line), "exit") == 0)

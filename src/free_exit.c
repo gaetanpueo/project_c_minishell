@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-void		free_exit(t_lazy **shell)
+void		free_exit(t_shell **shell)
 {
 	int		error_status;
 

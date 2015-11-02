@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-void		print_env(t_lazy *shell)
+void		print_env(t_shell *shell)
 {
 	int		i;
 

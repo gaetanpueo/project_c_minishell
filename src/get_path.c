@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-char		**get_path(t_lazy *shell)
+char		**get_path(t_shell *shell)
 {
 	int		i;
 	int		len;

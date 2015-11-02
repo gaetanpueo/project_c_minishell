@@ -5,7 +5,7 @@ static void	ignore_signal(int num)
 	(void)num;
 }
 
-t_lazy		*minishell(t_lazy *shell)
+t_shell		*minishell(t_shell *shell)
 {
 	int		i;
 

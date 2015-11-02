@@ -1,6 +1,6 @@
 #include <minishell.h>
 
-void		env_cpy(const char **environ, t_lazy **shell)
+void		env_cpy(const char **environ, t_shell **shell)
 {
 	int		i;
 

@@ -28,7 +28,7 @@ static char		**ft_realloc_s(char **env, char *arg)
 	return (env);
 }
 
-t_lazy			*unset_env(t_lazy *shell)
+t_shell			*unset_env(t_shell *shell)
 {
 	int		i;
 	int		k;
